@@ -1,9 +1,7 @@
 body{
     padding:0;
     margin:0;
-    min-height:4000px;
     font-family: 'Roboto', sans-serif;
-
 }
 
 /* debut de menudefilant */
@@ -323,9 +321,13 @@ body{
         display:block;
         border-top:75px solid rgb(12, 12, 12);
         border-bottom:none;
+        height:auto;    
     }
     #colonne3home3{
         border-bottom:75px solid rgb(12, 12, 12);
+    }
+    .colonnehome3{
+        height:900px;
     }
 }
 
@@ -350,4 +352,35 @@ body{
 
 /* fin de containerhome3 */
 
+/* debut de containerhome4 */
+
+.homecontainer4{
+    height:auto;
+    background-color: rgb(12, 12, 12);
+    width:100%;
+    display:block;
+    border-bottom:200px solid rgb(12, 12, 12);
+}
+
+.contcol{
+    display:flex;
+    width:100%;
+    max-width:1100px;
+    position: relative;
+    left:50%;
+    transform: translate(-50%);
+}
+
+.colhome4{
+    flex:1;
+    margin:5px;
+}
+
+.imagehome4{
+    width:100%;
+    padding-bottom:5px;
+    cursor:pointer;
+}
+
+/* fin de containerhome4 */
 
