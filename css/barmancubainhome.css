@@ -382,5 +382,11 @@ body{
     cursor:pointer;
 }
 
+@media(max-width:768px){
+    .homecontainer4{
+        border-bottom:75px solid rgb(12, 12, 12);
+    }
+}
+
 /* fin de containerhome4 */
 
