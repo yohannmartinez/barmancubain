@@ -1,0 +1,353 @@
+body{
+    padding:0;
+    margin:0;
+    min-height:4000px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/* debut de menudefilant */
+
+.boutonmenu{
+    height:75px;
+    width:75px;
+    position:fixed;
+    color:white;
+    left:0;
+    top:0;
+    z-index:100;
+    background-color:rgb(12, 12, 12);
+    font-size:40px;
+    text-align:center;
+    line-height: 75px;
+    padding:0;
+    cursor:pointer;
+}
+
+.menudefilant{
+    position:fixed;
+    height:100%;
+    width:400px;
+    background-color:rgb(12, 12, 12);
+    z-index: 99;
+    padding-top:75px;
+    left:-400px;
+    transition:0.5s;
+    overflow: hidden;
+}
+
+.menudefilantelement{
+    color:white;
+    display:block;
+    border-bottom:2px solid white;
+    padding:15px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+/* fin de menudefilant */
+
+
+/* fin de containerhome */
+
+.homecontainer{
+    position: relative;
+    border:none;
+    background-color:rgba(0,0,0,0.5);
+}
+
+.homecontainer::before{
+    content:"";
+    width:100%;
+    height:100%;
+    background-color:red;
+    position:absolute;
+    top:0;
+    left:0;
+    background-image:url('/home/yohann/Documents/sitebarman/images/homecontainerbg.JPG');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position:center;
+    filter:brightness(0.3) sepia(0.5);
+}
+
+.imagelogohome{
+    height:auto;
+    width:80%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    opacity: 0.9;
+    max-width:1000px;
+    filter:brightness(0.9);
+}
+
+.boutongodown{
+    height:75px;
+    width:75px;
+    position:absolute;
+    color:white;
+    right:0;
+    bottom:0;
+    z-index:100;
+    background-color:rgb(12, 12, 12);
+    font-size:40px;
+    text-align:center;
+    line-height: 75px;
+    padding:0;
+    cursor:pointer;
+}
+
+/* tablette */
+
+
+
+/* telephone */
+
+
+
+/* fin de containerhome */
+
+/* debut de containerhome2 */
+
+.homecontainer2{
+    height:auto;
+    border-top:200px solid rgb(12, 12, 12);
+    position:relative;
+    display:flex;
+}
+
+.conthome2base{
+    text-align:center;
+    padding:none;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.logohome2{
+    font-size:100px;
+    color:white;
+    margin:0;
+}
+
+.titlehome2{
+    color:white;
+    font-weight:bold;
+    font-size:30px;
+    margin-top:10px;
+}
+
+.partprivate{
+    height:900px;
+    flex:1;
+    background-color:rgba(231, 97, 35,0.7);
+    cursor:pointer;
+    position: relative;
+    display:block;
+}
+
+.partprivate::before{
+    content:"";
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:-1;
+    background:url('/home/yohann/Documents/sitebarman/images/prive.jpg');
+    background-position:center center;
+    background-size:1500px 900px;
+    background-repeat:no-repeat;
+    transition: 1s;
+}
+
+.partcompany{
+    height:900px;
+    flex:1;
+    background-color:rgba(37, 75, 78,0.7);
+    cursor:pointer;
+    position: relative;
+    display:block;
+}
+
+.partcompany::before{
+    content:"";
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:-1;
+    background:url('/home/yohann/Documents/sitebarman/images/entreprise.jpg');
+    background-position:center center;
+    background-size:1500px 900px;
+    background-repeat:no-repeat;
+    transition: 1s;
+}
+
+/* hover */
+
+.partcompany:hover::before{
+    
+    background-size:1800px 1100px;
+}
+
+.partprivate:hover::before{
+    
+    background-size:1800px 1100px;
+}
+
+/*tablette*/
+
+@media(max-width:768px){
+    .homecontainer2{
+        border-top:75px solid rgb(12, 12, 12);
+    }
+    .homecontainer2{
+        display:block;
+    }
+}
+
+/* fin de containerhome2 */
+
+/* debut de containerhome3 */
+
+.homecontainer3{
+    border-top:200px solid rgb(12, 12, 12);
+    height:900px;
+    display:flex;
+    border-bottom:200px solid rgb(12, 12, 12);
+}
+
+.colonnehome3{
+    flex:1;
+    height:100%;
+    position: relative;
+    color:white;
+    background-color:rgba(0,0,0,0.6);
+    
+}
+
+#colonne1home3:before{
+    content:"";
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:-1;
+    background:url('/home/yohann/Documents/sitebarman/images/mojito.jpg');
+    background-position:center center;
+    background-size: 1425px 950px;
+    background-repeat:no-repeat;
+    transition: 1s;
+}
+
+#colonne2home3::before{
+    content:"";
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:-1;
+    background:url('/home/yohann/Documents/sitebarman/images/daikiri.jpg');
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: 1000px 1500px;
+    transition: 1s;
+}
+
+#colonne3home3::before{
+    content:"";
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:-1;
+    background:url('/home/yohann/Documents/sitebarman/images/cubalibre.jpg');
+    background-position:center center;
+    background-size: 1000px 1000px;
+    background-repeat:no-repeat;
+    transition: 1s;
+}
+
+.descriptionhome3{
+    position:absolute;
+    bottom:50px;
+    width:95%;
+    left:2.5%;
+}
+
+.titlehome3{
+    font-size:60px;
+    font-weight:bold;
+    padding:none;
+    margin:none;
+}
+
+.txthome3{
+    font-style:italic;
+    font-size:20px;
+}
+
+/* hover */
+
+#colonne1home3:hover::before{
+    background-size: 1725px 1150px ;
+    background-repeat: no-repeat;
+    filter:brightness(0.8);
+}
+
+#colonne2home3:hover::before{
+    background-size: 1200px 1800px;
+    background-repeat: no-repeat;
+    filter:brightness(0.8);
+}
+
+#colonne3home3:hover::before{
+    background-size: 1300px 1300px  ;
+    background-repeat: no-repeat;
+    filter:brightness(0.8);
+}
+
+/* tablette */
+
+@media(max-width:768px){
+    .homecontainer3{
+        display:block;
+        border-top:75px solid rgb(12, 12, 12);
+        border-bottom:none;
+    }
+    #colonne3home3{
+        border-bottom:75px solid rgb(12, 12, 12);
+    }
+}
+
+/* grand ecrans */
+
+@media(min-width:3000px){
+    #colonne2home3::before , #colonne3home3::before{
+        background-size: 100% auto;
+    }
+    #colonne2home3:hover::before , #colonne3home3:hover::before{
+        background-size: 150% auto;
+    }
+    #colonne1home3::before{
+        background-size:150% auto;
+    }
+    #colonne1home3:hover::before{
+        background-size:200% auto;
+    }
+}
+
+
+
+/* fin de containerhome3 */
+
+
