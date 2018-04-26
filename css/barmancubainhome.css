@@ -64,7 +64,7 @@ body{
     position:absolute;
     top:0;
     left:0;
-    background-image:url('/home/yohann/Documents/sitebarman/images/homecontainerbg.JPG');
+    background-image:url('../images/homecontainerbg.JPG');
     background-size:cover;
     background-repeat:no-repeat;
     background-attachment: fixed;
