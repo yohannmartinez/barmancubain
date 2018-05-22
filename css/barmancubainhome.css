@@ -156,9 +156,9 @@ body{
     top:0;
     left:0;
     z-index:-1;
-    background:url('../images/prive.jpg');
+    background:url('../images/mariage.JPG');
     background-position:center center;
-    background-size:1500px 900px;
+    background-size:1100px 1500px;
     background-repeat:no-repeat;
     transition: 1s;
 }
@@ -180,9 +180,9 @@ body{
     top:0;
     left:0;
     z-index:-1;
-    background:url('../images/entreprise.jpg');
+    background:url('../images/mariage.JPG');
     background-position:center center;
-    background-size:1500px 900px;
+    background-size:1100px 1500px;
     background-repeat:no-repeat;
     transition: 1s;
 }
@@ -191,12 +191,12 @@ body{
 
 .partcompany:hover::before{
     
-    background-size:1800px 1100px;
+    background-size:1150px 1600px;
 }
 
 .partprivate:hover::before{
     
-    background-size:1800px 1100px;
+    background-size:1150px 1600px;
 }
 
 /*tablette*/
