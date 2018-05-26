@@ -1,7 +1,6 @@
 jQuery(document).ready(function () {
 
     /* debut de menudefilant */
-
     $('.boutonmenu').click(function () {
         if ($(".menudefilant").css("left") === '-400px') {
             $('.menudefilant').css({"left":"0px"});
@@ -31,7 +30,8 @@ jQuery(document).ready(function () {
     });
 
     $('#goToContacts').click(function(){
-        
+        $(window).scrollTop($('.homecontainer5').offset().top );
+        $('.menudefilant').css({"left":"-400px"});
     });
 
     /* debut de menudefilant */
@@ -50,11 +50,13 @@ jQuery(document).ready(function () {
 
     /* fin de homecontainer */
 
-    /* debut de homecontainer3 */
+    /* debut de contact */
 
-    
+    $("#instagram").click(function() { window.location="https://www.instagram.com/barmancubain/"; });
+    $("#facebook").click(function() { window.location="https://www.facebook.com/Barman-Cubain-1543829105704825/"; });
+    $("#linkedin").click(function() { window.location="https://www.linkedin.com/in/renelier-martinez-1bb5a4127/"; });
 
-    /* fin de homecontainer3 */
+    /* fin de contact */
 
 
 });
