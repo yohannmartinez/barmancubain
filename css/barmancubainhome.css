@@ -140,7 +140,7 @@ body{
 }
 
 .partprivate{
-    height:900px;
+    height:100vh;
     flex:1;
     background-color:rgba(231, 97, 35,0.7);
     cursor:pointer;
@@ -164,7 +164,7 @@ body{
 }
 
 .partcompany{
-    height:900px;
+    height:100vh;
     flex:1;
     background-color:rgba(37, 75, 78,0.7);
     cursor:pointer;
@@ -212,11 +212,33 @@ body{
 
 /* fin de containerhome2 */
 
+/* homecontainer2 presentation privé */
+
+.homeconatiner2extendprivate{
+    width:100%;
+    height:0px;
+    transition: 1s;
+    display:block;
+}
+
+/* fin homecontainer2 presentation privé */
+
+/* homecontainer2 presentation privé */
+
+.homeconatiner2extendcompany{
+    width:100%;
+    transition: 1s;
+    height:0px;
+    display:block;
+}
+
+/* fin homecontainer2 presentation privé */
+
 /* debut de containerhome3 */
 
 .homecontainer3{
     border-top:200px solid rgb(12, 12, 12);
-    height:900px;
+    height:100vh;
     display:flex;
     border-bottom:200px solid rgb(12, 12, 12);
 }
@@ -327,7 +349,7 @@ body{
         border-bottom:75px solid rgb(12, 12, 12);
     }
     .colonnehome3{
-        height:900px;
+        height:100vh;
     }
 }
 
