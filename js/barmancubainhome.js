@@ -52,16 +52,19 @@ jQuery(document).ready(function () {
 
     /* debut de homecontainer2 */
 
-    $('.partprivate').click(function () {
-        $('.homeconatiner2extendprivate').height("400px");
-        $('.homeconatiner2extendcompany').height("0px");
-        $(window).scrollTop($('.homeconatiner2extendprivate').offset().top);
+    $('.partprivate').click(function(){
+        $('.modalprivate').css({"display": "inherit"});
     });
-    $('.partcompany').click(function () {
-        $('.homeconatiner2extendcompany').height("300px");
-        $('.homeconatiner2extendprivate').height("0px");
-        $(window).scrollTop($('.homeconatiner2extendcompany').offset().top);
+
+
+    $('.partcompany').click(function(){
+        $('.modalcompany').css({"display": "inherit"});
     });
+
+    $('.croix').click(function(){
+        $('.modalprivate,.modalcompany').css({"display":"none"});
+    });
+
 
     /* debut de contact */
 
